@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+
+struct student
+{
+  char *name;
+  int roll;
+  float per;
+};
+
+int main ()
+{
+  struct student s1;
+
+  printf ("\nEnter student`s name :- ");
+  scanf ("%s", s1.name);
+
+  printf ("\nEnter student`s roll no :- ");
+  scanf ("%d", &s1.roll);
+
+  printf ("\nEnter student`s percentage :- ");
+  scanf ("%f", &s1.per);
+
+  printf ("\nName :- %s", s1.name);
+  printf ("\nRoll no :- %d", s1.roll);
+  printf ("\nPercentage :- %.2f", s1.per);
+
+  return (0);
+}
+
